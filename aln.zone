@@ -1,0 +1,48 @@
+$TTL 1D
+$ORIGIN austin-lane.net. 
+@       IN      SOA     ns.lane-jayasinha.com. ns.disputingtaste.com. ( 
+                                      2023080402 ; Serial
+                                      8640      ; Refresh
+                                      8640      ; Retry
+                                      86400     ; Expire - 1 day
+                                      86400 )    ; Minimum
+		IN      NS      ns
+www		IN	A	45.79.72.204
+ghibli		IN	A	45.79.72.204
+www3		IN	A	45.79.72.204
+comments-dev	IN	A	45.79.72.204
+ns		IN	A	45.33.1.131 
+bencraft	IN	A	45.33.1.131 
+minecraft	IN	A	45.33.1.131 
+mail    	IN      A       45.79.72.204
+lanstin 	IN      A       66.92.165.161
+wisdom  	IN      A       45.33.1.131 
+www2    	IN      A       45.33.1.131 
+kate    	IN      A       45.33.1.131 
+ben       	IN      A       45.33.1.131 
+communityplaytime IN      A       45.33.1.131 
+drupal          IN      A       45.33.1.131
+comments	IN	A	45.33.1.131
+lisp    	IN      A       207.192.70.203
+mail2           IN      A       207.192.70.203
+net     	IN      A       66.92.165.90
+db      	IN      A       66.92.165.90
+new             IN      A       66.92.165.103
+ipv6            IN      AAAA    2001:470:1f06:634::2
+
+
+austin-lane.net. IN MX 10 mail.austin-lane.net.
+austin-lane.net. IN A 45.79.72.204
+
+; $ORIGIN release.austin-lane.net. 
+; @      IN    SOA   ns.austin-lane.net. chris.austin-lane.net. (
+;                                       2012050310 ; Serial
+;                                       86400      ; Refresh
+;                                       86400      ; Retry
+;                                       864000     ; Expire - 1 day
+;                                       864000 )    ; Minimum
+; 		IN    NS    ns2
+; ns2 IN A  10.244.136.133
+  
+
+

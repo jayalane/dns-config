@@ -1,0 +1,17 @@
+$TTL 1D
+@       IN      SOA     ns.lane-jayasinha.com. ns.disputingtaste.com. ( 
+                                      2023080401 ; Serial
+                                      8640      ; Refresh
+                                      8640      ; Retry
+                                      86400     ; Expire - 10 day
+                                      86400 )    ; Minimum
+		IN      NS      ns
+dev	IN	A	45.79.72.204
+www    	IN      A       45.79.72.204
+geo     IN      A       45.79.72.204
+ns	IN	A	45.33.1.131
+mail    IN      A       45.79.72.204
+mail    IN      AAAA      2600:3c01::f03c:92ff:fe7a:ef16 
+
+disputingtaste.com. IN MX 10 mail.disputingtaste.com.
+disputingtaste.com. IN A 45.79.72.204
