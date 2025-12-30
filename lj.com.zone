@@ -1,7 +1,7 @@
 $TTL 1D
 @       IN      SOA     ns.austin-lane.com. ns.disputingtaste.com. ( 
 
-                                      2024012300 ; Serial
+                                      2024111800 ; Serial
                                       8640      ; Refresh
                                       8640      ; Retry
                                       86400     ; Expire - 10 day
@@ -16,7 +16,7 @@ alex6   IN      AAAA    2600:3c01::f03c:92ff:fecf:2a8a
 
 lane-jayasinha.com. IN MX 10 mail.lane-jayasinha.com.
 lane-jayasinha.com. IN A 45.33.1.131
-lane-jayasinha.com. IN TXT "v=spf1 ip4:45.33.1.131 ip6:2600:3c00::33e2:37ed:c0e0:7d71  -all"
+lane-jayasinha.com. IN TXT "v=spf1 ip4:45.79.72.204 ip4:45.33.1.131 ip6:2600:3c01::f03c:92ff:fe7a:ef16 ip6:2600:3c00::33e2:37ed:c0e0:7d71  -all"
 
 alex.lane-jayasinha.com.  IN   NS   ns1
                           IN   NS   ns2
