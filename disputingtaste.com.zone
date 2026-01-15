@@ -1,6 +1,6 @@
 $TTL 1D
-@       IN      SOA     ns.lane-jayasinha.com. ns.disputingtaste.com. ( 
-                                      2024111800 ; Serial
+@       IN      SOA     ns.lane-jayasinha.com. ns.disputingtaste.com. (
+                                      2026011500 ; Serial
                                       8640      ; Refresh
                                       8640      ; Retry
                                       86400     ; Expire - 1 day
@@ -18,3 +18,10 @@ disputingtaste.com. IN MX 10 mail.disputingtaste.com.
 disputingtaste.com. IN A 45.79.72.204
 disputingtaste.com. IN AAAA 2600:3c01::f03c:92ff:fe7a:ef16
 
+; DKIM
+mail._domainkey IN TXT ( "v=DKIM1; h=sha256; k=rsa; "
+    "p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA31aD0K03oMxGKYbkOwAh9JfTqKezb/P0VIdk1MWOAccI1eCZ5/4ozcMtAkthfXlya2fIy52dcG2Tw+Liz9xJv5ITFGyonRlKueALdweazOqierrqyiPxzpPYWQWhnBecCPFQpsBWIl9NmQtdfuYE52upltbXTAHDS+PMlA1yIoVThPFP3XkwN63Syz42u3Z08srvq6ILiYd4qK"
+    "wjP5/CLNyg8g7XPVgblcu+4VuEN5IspXtk7lEm3dHLMutkaMb0EXCgZsPzsSsIdrXypdHs/yi+LtddJekUybKnekFnHyEQ6QjmiOvlWKu+wC7UQpoYugI/puapVs8VgpThXcNFDwIDAQAB" )
+
+; DMARC
+_dmarc IN TXT "v=DMARC1; p=reject; rua=mailto:chris@lane-jayasinha.com"
