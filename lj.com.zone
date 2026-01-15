@@ -1,7 +1,7 @@
 $TTL 1D
 @       IN      SOA     ns.austin-lane.com. ns.disputingtaste.com. ( 
 
-                                      2026011100 ; Serial
+                                      2026011500 ; Serial
                                       8640      ; Refresh
                                       8640      ; Retry
                                       86400     ; Expire - 10 day
@@ -23,3 +23,9 @@ alex.lane-jayasinha.com.  IN   NS   ns1
                           IN   NS   ns2
 ns1.alex.lane-jayasinha.com    A    45.33.43.240
 ns2.alex.lane-jayasinha.com    A   45.33.1.131
+
+; DKIM record for mail signing
+mail._domainkey.lane-jayasinha.com. IN TXT "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhWn0bySxUeDObzOZo8eThDMk+aTNcDBp4b3yE31a27WiLt/mLg2EWV3u/ncGwxTQv3iix9Y+BgU9TfgC3kDgGnrHlrv2KEnul3eFVM5EkzrU9OtZjqZgBANzFKF6WdFZquonPQp0YnONI3Tq/sCYMVfFeNRMwlCDaKWYVQ4vRnNScDdTDJkXri4AbMzOEgFejcg1VK3boBP1rGlJEefS1fc6Fmk0y2hszhRg8WZBmIvXJI0hWBsH9qAhWMrh4Hi5gd5808LdNroc88K1s8wUe59HvE5YyQvFzSHrGAuNtlnhEN4ifIbak2UQCcsDxYgiRKhvNN/0yJpCbl2ltkyk6QIDAQAB"
+
+; DMARC policy (monitoring mode)
+_dmarc.lane-jayasinha.com. IN TXT "v=DMARC1; p=none; rua=mailto:chris@lane-jayasinha.com"
