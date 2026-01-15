@@ -1,6 +1,6 @@
 $TTL 1D
 @       IN      SOA     ns.lane-jayasinha.com. ns.disputingtaste.com. (
-                                      2026011500 ; Serial
+                                      2026011501 ; Serial
                                       8640      ; Refresh
                                       8640      ; Retry
                                       86400     ; Expire - 1 day
@@ -13,7 +13,7 @@ ns	IN	A	45.33.1.131
 mail    IN      A       45.79.72.204
 mail    IN      AAAA      2600:3c01::f03c:92ff:fe7a:ef16 
 
-disputingtaste.com. IN TXT v=spf1 ip4:45.79.72.204 ip4:45.31.1.131 ip6:2600:3c00::33e2:37ed:c0e0:7d71 ip6:2600:3c01::f03c:92ff:fe7a:ef16 -all
+disputingtaste.com. IN TXT "v=spf1 ip4:45.79.72.204 ip4:45.31.1.131 ip6:2600:3c00::33e2:37ed:c0e0:7d71 ip6:2600:3c01::f03c:92ff:fe7a:ef16 -all"
 disputingtaste.com. IN MX 10 mail.disputingtaste.com.
 disputingtaste.com. IN A 45.79.72.204
 disputingtaste.com. IN AAAA 2600:3c01::f03c:92ff:fe7a:ef16
