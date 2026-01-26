@@ -1,7 +1,7 @@
 $TTL 1D
-$ORIGIN austin-lane.net. 
-@       IN      SOA     ns.lane-jayasinha.com. ns.disputingtaste.com. ( 
-                                      2023080402 ; Serial
+$ORIGIN austin-lane.net.
+@       IN      SOA     ns.lane-jayasinha.com. ns.disputingtaste.com. (
+                                      2026012501 ; Serial
                                       8640      ; Refresh
                                       8640      ; Retry
                                       86400     ; Expire - 1 day
@@ -33,6 +33,17 @@ ipv6            IN      AAAA    2001:470:1f06:634::2
 
 austin-lane.net. IN MX 10 mail.austin-lane.net.
 austin-lane.net. IN A 45.79.72.204
+
+; SPF
+austin-lane.net. IN TXT "v=spf1 ip4:45.79.72.204 ip4:45.33.1.131 ip6:2600:3c00::33e2:37ed:c0e0:7d71 ip6:2600:3c01::f03c:92ff:fe7a:ef16 -all"
+
+; DKIM
+mail._domainkey IN TXT ( "v=DKIM1; h=sha256; k=rsa; "
+    "p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn2vkqc4Tq15Rf+O6lk5Q3mKv1FK0ZwpW7LHoT2IBRtV1OLAkfueNRfTlESPmrh5JLudVX0ooC+Nasj9HTBTGoFlDR7OHCz+AbrBP4qBXDUtlbQ36oDiq+zM6RqjibFZHlLF1xoPW6syqtEX9YOns65CwsiO4dBN3+y2pK95I95PU/MJMpnkrwxlkHxswdWRC9RgVbdgapZspdX"
+    "e9tRI+pnie9QxV3xt3+hmhepV7yTsCIC+bXDw2ojT3Z0/+N/h3sBSJ5doZoKL5jD9sA13/ytIvwsnOYFxdfxCamme9N6xedlyGk1ljgBZMYa4wgbQwxAYbF7fP/Bh1sCRhkvKtjQIDAQAB" )
+
+; DMARC
+_dmarc IN TXT "v=DMARC1; p=reject; rua=mailto:chris@lane-jayasinha.com"
 
 ; $ORIGIN release.austin-lane.net. 
 ; @      IN    SOA   ns.austin-lane.net. chris.austin-lane.net. (
