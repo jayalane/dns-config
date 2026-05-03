@@ -12,7 +12,7 @@ www    	IN      A       45.33.1.131
 ns	IN	A	45.79.72.204
 social  IN      A       45.79.72.204
 mail    IN      A       45.33.1.131
-mail    IN      AAAA    2600:3c00::33e2:37ed:c0e0:7d71 
+mail    IN      AAAA    2600:3c00::f03c:92ff:fe25:e409
 alex6   IN      AAAA    2600:3c01::f03c:92ff:fecf:2a8a
 
 lane-jayasinha.com. IN MX 10 mail.lane-jayasinha.com.
