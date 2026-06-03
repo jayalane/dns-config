@@ -1,6 +1,6 @@
 $TTL 1D
 @       IN      SOA     ns.lane-jayasinha.com. ns.disputingtaste.com. (
-                                      2026060201 ; Serial
+                                      2026060300 ; Serial
                                       8640      ; Refresh
                                       8640      ; Retry
                                       8640     ; Expire - 1 day

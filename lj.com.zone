@@ -1,7 +1,7 @@
 $TTL 1D
 @       IN      SOA     ns.austin-lane.net. ns.disputingtaste.com. ( 
 
-                                      2026060103 ; Serial
+                                      2026060300 ; Serial
                                       8640      ; Refresh
                                       8640      ; Retry
                                       8640     ; Expire - 10 day
@@ -13,7 +13,8 @@ de1      IN      AAAA    2a01:4f8:1c17:6a12::1
 www      IN      AAAA    2a01:4f8:1c17:6a12::1
 www      IN      A       49.12.188.43
 ns       IN      A       49.12.188.43
-social   IN      A       45.79.72.204
+social   IN      A       144.217.79.66
+social   IN      AAAA    2607:5300:203:1342::1
 mail     IN      A       45.33.1.131
 mail     IN      AAAA    2600:3c00::f03c:92ff:fe25:e409
 outbound IN      A       45.33.1.131
