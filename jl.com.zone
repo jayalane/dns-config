@@ -1,14 +1,14 @@
 $TTL 1D
 @       IN      SOA     ns.austin-lane.net. ns.sszendo.org. (
-                                      2026053000 ; Serial
+                                      2026060300 ; Serial
                                       8640      ; Refresh
                                       8640      ; Retry
                                       8640     ; Expire - 10 day
                                       8640 )    ; Minimum
 		IN      NS      ns
-dev	IN	A	45.79.72.204
-www    	IN      A       45.33.1.131
-ns	IN	A	45.33.1.131
+dev	IN	A	49.12.188.4345.79.72.204
+www    	IN      A       49.12.188.4345.33.1.131
+ns	IN	A	49.12.188.4345.33.1.131
 
 jayasinha-lane.com. IN MX 10 ns.austin-lane.net.
-jayasinha-lane.com. IN A 45.33.1.131
+jayasinha-lane.com. IN A 144.217.79.66
