@@ -1,6 +1,6 @@
 $TTL 1D
 @       IN      SOA     ns.lane-jayasinha.com. ns.disputingtaste.com. (
-                                      2026061305 ; Serial
+                                      2026061307 ; Serial
                                       8640      ; Refresh
                                       8640      ; Retry
                                       8640     ; Expire - 1 day
@@ -11,6 +11,10 @@ www    	 IN      A       45.79.72.204
 geo      IN      A       45.79.72.204
 canada   IN      A       144.217.79.66
 canada   IN      AAAA    2607:5300:203:1342::1
+ns1      IN      A       49.12.188.43
+ns1      IN      AAAA    2a01:4f8:1c17:6a12::1
+ns2      IN      A       144.217.79.66
+ns2      IN      AAAA    2607:5300:203:1342::1
 ns       IN      A       49.12.188.43
 mail     IN      A       144.217.79.66
 mail     IN      AAAA    2607:5300:203:1342::1

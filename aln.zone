@@ -1,7 +1,7 @@
 $TTL 1D
 $ORIGIN austin-lane.net.
 @       IN      SOA     ns.lane-jayasinha.com. ns.disputingtaste.com. (
-                                      2026060302 ; Serial
+                                      2026061300 ; Serial
                                       8640      ; Refresh
                                       8640      ; Retry
                                       8640     ; Expire - 1 day
@@ -12,6 +12,10 @@ ghibli		IN	A	45.79.72.204
 www3		IN	A	45.79.72.204
 comments-dev	IN	A	45.79.72.204
 ns		IN	A	144.217.79.66
+ns1             IN      A       49.12.188.43
+ns1             IN      AAAA    2a01:4f8:1c17:6a12::1
+ns2             IN      A       144.217.79.66
+ns2             IN      AAAA    2607:5300:203:1342::1
 bencraft	IN	A	144.217.79.66
 minecraft	IN	A	144.217.79.66
 mail    	IN      A       45.79.72.204
@@ -32,10 +36,11 @@ ipv6            IN      AAAA    2607:5300:203:1342::1
 
 
 austin-lane.net. IN MX 10 mail.austin-lane.net.
-austin-lane.net. IN A 45.79.72.204
+austin-lane.net. IN A 144.217.79.66
+austin-lane.net. IN AAAA 2607:5300:203:1342::1
 
 ; SPF
-austin-lane.net. IN TXT "v=spf1 ip4:45.79.72.204 ip4:45.33.1.131 ip6:2600:3c00::33e2:37ed:c0e0:7d71 ip6:2600:3c01::f03c:92ff:fe7a:ef16 -all"
+austin-lane.net. IN TXT "v=spf1 ip4:144.217.79.66 ip6:2607:5300:203:1342::1 ip4:45.79.72.204 ip4:45.33.1.131 ip6:2600:3c00::33e2:37ed:c0e0:7d71 ip6:2600:3c01::f03c:92ff:fe7a:ef16 -all"
 
 ; DKIM
 mail._domainkey IN TXT ( "v=DKIM1; h=sha256; k=rsa; "
