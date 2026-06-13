@@ -1,17 +1,21 @@
 $TTL 1D
 @       IN      SOA     ns.austin-lane.net. ns.sszendo.org. (
-                                      2026061303 ; Serial
+                                      2026061308 ; Serial
                                       8640      ; Refresh
                                       8640      ; Retry
                                       8640      ; Expire - 10 day
                                       8640 )    ; Minimum
 		IN      NS      ns
-canada  IN      A       144.217.79.66
-de1     IN      A       49.12.188.43
-dev	IN	A	49.12.188.43
-www     IN      A       45.33.1.131
-mail    IN      A       45.33.1.131
-ns      IN      A       49.12.188.43
+canada   IN      A       144.217.79.66
+canada   IN      A       2607:5300:203:1342::1
+de1      IN      A       49.12.188.43
+de1      IN      AAAA    2a01:4f8:1c17:6a12::1
+dev      IN      A       49.12.188.43
+www      IN      A       45.33.1.131
+mail     IN      A       45.33.1.131
+outbound IN      A       45.33.1.131
+outbound IN      AAAA    2600:3c00::f03c:92ff:fe25:e409
+ns       IN      A       49.12.188.43
 
 jayasinha-lane.com. IN MX 10 mail.lane-jayasinha.com
 jayasinha-lane.com. IN A 45.33.1.131

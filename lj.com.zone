@@ -1,7 +1,7 @@
 $TTL 1D
 @       IN      SOA     ns.austin-lane.net. ns.disputingtaste.com. ( 
 
-                                      2026060301 ; Serial
+                                      2026061302 ; Serial
                                       8640      ; Refresh
                                       8640      ; Retry
                                       8640     ; Expire - 10 day
@@ -28,8 +28,8 @@ lane-jayasinha.com. IN TXT "v=spf1 ip4:45.79.72.204 ip4:45.33.1.131 ip4:49.12.18
 
 alex.lane-jayasinha.com.  IN   NS   ns1
                           IN   NS   ns2
-ns1.alex.lane-jayasinha.com    A    45.33.43.240
-ns2.alex.lane-jayasinha.com    A   45.33.1.131
+ns1.alex.lane-jayasinha.com    A    49.12.188.43
+ns2.alex.lane-jayasinha.com    A   144.217.79.66
 
 ; DKIM record for mail signing (split into <255 char strings)
 mail._domainkey.lane-jayasinha.com. IN TXT ( "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhWn0bySxUeDObzOZo8eThDMk+aTNcDBp4b3yE31a27WiLt/mLg2EWV3u/ncGwxTQv3iix9Y+BgU9TfgC3kDgGnrHlrv2KEnul3eFVM5EkzrU9OtZjqZgBANzFKF6WdFZquonPQp0YnONI3Tq/sCYMVfFeNRMwlCDaKWYVQ4vRnNScDdTD"
